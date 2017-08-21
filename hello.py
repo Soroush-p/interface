@@ -107,7 +107,7 @@ class MainHandler(tornado.web.RequestHandler):
 class ViewHandler(tornado.web.RequestHandler):
     def post(self):
         """
-            gets a value from CAs drop box
+            gets a CA name from drop box then find out its management ip address call a function that returns a dictionary of conflict in the txt file
         """
         value = self.get_argument('CA_drp_v')
         # print(Mngip[value])
